@@ -1,109 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camiseta Orgânica - EcoTrend</title>
-    <link rel="stylesheet" href="../../boostrap.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../../boostrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart"
+    />
+  </head>
+  <body>
     <header class="header-container">
-        <div class="container">
-            <div class="header-content">
-                <a class="header-brand" href="../../index.html">
-                    <i class="bi bi-leaf"></i>
-                    <span class="eco">Eco</span><span class="store">Trend</span>
-                </a>
-                <nav class="header-nav">
-                    <a href="../../index.html">Home</a>
-                    <a href="produtos.html">Produtos</a>
-                    <a href="categorias.html">Categorias</a>
-                    <a href="contato.html">Contato</a>
-                </nav>
-                <div class="header-search">
-                    <input type="text" placeholder="Buscar produtos...">
-                    <button type="submit"><i class="bi bi-search"></i></button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header-content">
+          <a class="header-brand" href="../../index.html">
+            <i class="bi bi-leaf"></i>
+            <span class="eco">Eco</span><span class="store">Trend</span>
+          </a>
+          <nav class="header-nav">
+            <a href="../../index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="contato.html">Contato</a>
+            <a href="#" class="cart-icon">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+            </a>
+          </nav>
+          <div class="header-search">
+            <input type="text" placeholder="Buscar produtos..." />
+            <button type="submit"><i class="bi bi-search"></i></button>
+          </div>
         </div>
+      </div>
     </header>
 
     <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="../imgs/camisetaOrganica.png" class="img-fluid rounded" alt="Camiseta Orgânica">
-            </div>
-            <div class="col-md-6">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="produtos.html" class="text-success">Produtos</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Camiseta Orgânica</li>
-                    </ol>
-                </nav>
-                <h2>Camiseta Orgânica</h2>
-                <p class="text-success fw-bold fs-3">R$ 89,90</p>
-                <p class="text-muted">Camiseta 100% algodão orgânico, cultivado sem agrotóxicos. Ideal para quem busca conforto e sustentabilidade no dia a dia.</p>
-                
-                <h5>Características:</h5>
-                <ul>
-                    <li>100% Algodão Orgânico</li>
-                    <li>Certificado GOTS</li>
-                    <li>Lavável à máquina</li>
-                    <li>Disponível em vários tamanhos</li>
-                </ul>
-
-                <div class="mb-3">
-                    <label class="form-label">Tamanho:</label>
-                    <select class="form-select" style="max-width: 200px;">
-                        <option>P</option>
-                        <option>M</option>
-                        <option>G</option>
-                        <option>GG</option>
-                    </select>
-                </div>
-
-                <button id="btnComprar" class="btn btn-success btn-lg">
-                    <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
-                </button>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="../imgs/camisetaOrganica.png"
+            class="img-fluid rounded w-70 h-70"
+            alt="Camiseta Orgânica"
+          />
         </div>
+        <div class="col-md-6">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="produtos.html" class="text-success">Produtos</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Camiseta Orgânica
+              </li>
+            </ol>
+          </nav>
+          <h2>Camiseta Orgânica</h2>
+          <p class="text-success fw-bold fs-3">R$ 89,90</p>
+          <p class="text-muted">
+            Camiseta 100% algodão orgânico, cultivado sem agrotóxicos. Ideal
+            para quem busca conforto e sustentabilidade no dia a dia.
+          </p>
+
+          <h5>Características:</h5>
+          <ul>
+            <li>100% Algodão Orgânico</li>
+            <li>Certificado GOTS</li>
+            <li>Lavável à máquina</li>
+            <li>Disponível em vários tamanhos</li>
+          </ul>
+
+          <div class="mb-3">
+            <label class="form-label">Tamanho:</label>
+            <select class="form-select" style="max-width: 200px">
+              <option>P</option>
+              <option>M</option>
+              <option>G</option>
+              <option>GG</option>
+            </select>
+          </div>
+
+          <button id="btnComprar" class="btn btn-success btn-lg">
+            <i class="bi bi-cart-plus"></i> Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
     </section>
 
     <footer class="text-center py-4 mt-5">
-        <div class="container">
-            <div class="mb-3">
-                <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
-                <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-facebook fs-5"></i></a>
-                <a href="#" class="text-white text-decoration-none"><i class="bi bi-twitter-x fs-5"></i></a>
-            </div>
-            <p class="mb-1">&copy; 2026 EcoTrend - Todos os direitos reservados</p>
+      <div class="container">
+        <div class="mb-3">
+          <a href="#" class="text-white me-3 text-decoration-none"
+            ><i class="bi bi-instagram fs-5"></i
+          ></a>
+          <a href="#" class="text-white me-3 text-decoration-none"
+            ><i class="bi bi-facebook fs-5"></i
+          ></a>
+          <a href="#" class="text-white text-decoration-none"
+            ><i class="bi bi-twitter-x fs-5"></i
+          ></a>
         </div>
+        <p class="mb-1">&copy; 2026 EcoTrend - Todos os direitos reservados</p>
+      </div>
     </footer>
     <div id="animacaoCompra" class="animacao-compra">
-        <div class="check">
-            <i class="bi bi-check-circle-fill"></i>
-            <p>Produto adicionado ao carrinho!</p>
-        </div>
+      <div class="check">
+        <i class="bi bi-check-circle-fill"></i>
+        <p>Produto adicionado ao carrinho!</p>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-const botao = document.getElementById("btnComprar");
-const animacao = document.getElementById("animacaoCompra");
+      const botao = document.getElementById("btnComprar");
+      const animacao = document.getElementById("animacaoCompra");
 
-botao.addEventListener("click", () => {
+      botao.addEventListener("click", () => {
+        animacao.classList.add("ativo");
 
-animacao.classList.add("ativo");
-
-setTimeout(() => {
-animacao.classList.remove("ativo");
-}, 2000);
-
-});
+        setTimeout(() => {
+          animacao.classList.remove("ativo");
+        }, 2000);
+      });
     </script>
-</body>
+  </body>
 </html>
