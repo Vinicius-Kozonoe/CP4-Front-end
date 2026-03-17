@@ -19,7 +19,10 @@
                     <i class="bi bi-leaf"></i>
                     <span class="eco">Eco</span><span class="store">Trend</span>
                 </a>
-                <nav class="header-nav">
+                <button class="mobile-menu-btn d-lg-none" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </button>
+                <nav class="header-nav" id="mainNav">
                     <a href="../../index.html">Home</a>
                     <a href="produtos.html">Produtos</a>
                     <a href="categorias.html">Categorias</a>
@@ -102,6 +105,10 @@ animacao.classList.remove("ativo");
 }, 2000);
 
 });
+        
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+        }
 
 </script>
 </body>
