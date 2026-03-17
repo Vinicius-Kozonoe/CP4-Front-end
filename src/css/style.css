@@ -5,11 +5,10 @@
 }
 
 .header-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
 }
 
 .header-brand {
@@ -88,8 +87,8 @@
 
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
-        align-items: stretch;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
     
     .header-nav {
