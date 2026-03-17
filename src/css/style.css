@@ -1,28 +1,110 @@
-.navbar{
-background:#2d6a4f;
-padding:15px 0;
-box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+.header-container {
+    background: #2d6a4f;
+    padding: 12px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
-.navbar-brand{
-font-weight:bold;
-font-size:24px;
-transition: 0.3s;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.navbar-brand:hover{
-transform: scale(1.05);
+.header-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s;
 }
 
-.nav-link{
-font-weight: 500;
-padding: 8px 15px !important;
-border-radius: 5px;
-transition: 0.3s;
+.header-brand:hover {
+    transform: scale(1.05);
+    color: white;
 }
 
-.nav-link:hover{
-background: rgba(255,255,255,0.15);
+.header-brand i {
+    margin-right: 8px;
+    font-size: 28px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-nav a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.header-nav a:hover {
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.header-nav a.active {
+    background: rgba(255,255,255,0.2);
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.15);
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.header-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 180px;
+    font-size: 14px;
+}
+
+.header-search input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.header-search button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .header-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .header-search {
+        justify-content: center;
+    }
+    
+    .header-search input {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .banner img{
